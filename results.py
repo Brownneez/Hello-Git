@@ -62,43 +62,48 @@ def checkTuple(my_num, my_tuple):
 #lists
 #result for  1 -
 
-def sumListElements(my_list):
-        for i in my_list:
-            sum_elements = sum_elements + i
-            return sum_elements
+def sumListElements (my_list):
+    sum_elements= 0
+    for i in my_list:
+       sum_elements = sum_elements + i
+    return sum_elements
+
+
 
 #result for 2
 
-def sumListElements(my_list):
-        for i in my_list:
-            sum_elements = sum_elements * i
-            return sum_elements
+def mul_list_elements (my_list):
+    mul_elements = 1
+    for i in my_list:
+        mul_elements = mul_elements * i
+    return mul_elements
 
-# result for 3
 
+
+# result for 3 - better name
 def max_numbers(list_num):
-        max_num = max_numbers[0]
-        for i in max_numbers:
-            if max_num < i:
-                return max_num
+    max_num = list_num[0]
+    for i in list_num:
+        if max_num < i:
+            max_num = i
+    return max_num
 
-#result for 4 -
+#result for 4 - better name
 
 def max_numers(list_num):
-        max_num = max_numers[0]
-        for i in max_numers:
-            if max_num < i:
-                return max_num
+    max_num = list_num[0]
+    for i in list_num:
+        if max_num < i:
+            max_num = i
+    return list_num.index(max_num)
 
-#result for 5
+#result for 5 -  better name
 
 def my_list(num_list):
-        for i in my_list:
-            if i % 10 == 0:
-                return i
-                break
-            if i % 10 > 0:
-                return -1
+    for i in num_list:
+        if i % 10 == 0:
+            return i
+    return -1
 
 #result for 6
 
@@ -109,7 +114,16 @@ def count_six(my_list):
             counter += 1
     return counter
 
+#result for 7
 
+def count_strings(list_of_strings):
+    counter = 0
+    for i in list_of_strings:
+        if len(i) == 4:
+            counter += 1
+    return counter
+
+print(count_strings(["four", "five", "mm"]))
 
 
 
