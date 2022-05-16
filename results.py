@@ -55,28 +55,28 @@ def two_tuples(tuple1, tuple2):
 #result for 10
 def checkTuple(my_num, my_tuple):
      counter = 0
-        for i in my_tuple:
-            if len(i) >= my_num:
+     for i in my_tuple:
+          if len(i) >= my_num:
                 counter += 1
-        return counter
+                return counter
 #lists
 #result for  1 -
 
-    def sumListElements(my_list):
+def sumListElements(my_list):
         for i in my_list:
             sum_elements = sum_elements + i
             return sum_elements
 
 #result for 2
 
-    def sumListElements(my_list):
+def sumListElements(my_list):
         for i in my_list:
             sum_elements = sum_elements * i
             return sum_elements
 
 # result for 3
 
-    def max_numbers(list_num):
+def max_numbers(list_num):
         max_num = max_numbers[0]
         for i in max_numbers:
             if max_num < i:
@@ -84,7 +84,7 @@ def checkTuple(my_num, my_tuple):
 
 #result for 4 -
 
-    def max_numers(list_num):
+def max_numers(list_num):
         max_num = max_numers[0]
         for i in max_numers:
             if max_num < i:
@@ -92,7 +92,7 @@ def checkTuple(my_num, my_tuple):
 
 #result for 5
 
-    def my_list(num_list):
+def my_list(num_list):
         for i in my_list:
             if i % 10 == 0:
                 return i
@@ -101,6 +101,13 @@ def checkTuple(my_num, my_tuple):
                 return -1
 
 #result for 6
+
+def count_six(my_list):
+    counter = 0
+    for i in my_list:
+        if i == 6:
+            counter += 1
+    return counter
 
 
 
